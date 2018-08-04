@@ -4,11 +4,11 @@ const friendData = require("../data/friends");
 module.exports = app => {
 
     // Get all friends list results
-    app.get("/api/friends", (req, res) => {
+    app.route("/api/friends")
+    .get( (req, res) => {
         res.json(friendData);
-    });
-
-    app.post("/api/friends", (req, res) => {
+    })
+    .post( (req, res) => {
 
         const newResults = req.body;
 
