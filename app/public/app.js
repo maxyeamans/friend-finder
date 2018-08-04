@@ -13,8 +13,8 @@ const surveyQuestions = [
     "I'm always down to go see live music even if I don't know what band is playing."
 ];
 
-surveyQuestions.forEach( question, index =>{
-    $("<div>").attr({
-        class: "survey-question"
-    })
+$("#submit-quiz").on("click", event => {
+    event.preventDefault();
+
+    
 });
